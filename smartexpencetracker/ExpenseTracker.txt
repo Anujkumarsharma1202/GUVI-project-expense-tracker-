@@ -1,0 +1,15 @@
+ExpenseTracker/
+├── src/
+│   ├── DBConnection.java
+│   ├── User.java                  ← Model for user
+│   ├── Expense.java               ← Model for expense
+│   ├── UserDAO.java               ← Handles user DB ops (register/login/getId)
+│   ├── ExpenseDAO.java            ← Handles DB ops for expenses
+│   ├── RegisterFrame.java         ← Swing GUI: registration
+│   ├── LoginFrame.java            ← Swing GUI: login
+│   ├── ExpenseFrame.java          ← Swing GUI: expense input and display
+│   └── Main.java                  ← (Optional) to launch LoginFrame
+├── lib/
+│   └── mysql-connector-java-8.x.xx.jar
+├── README.md
+└── expense_tracker.sql            ← SQL file to set up DB + tables
