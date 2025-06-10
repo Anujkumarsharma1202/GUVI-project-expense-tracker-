@@ -1,0 +1,26 @@
+Project Name: Smart Expense Tracker (Console)
+
+Team Member: Anuj Kumar Sharma
+
+Technologies Used:
+- Java
+- MySQL
+- JDBC
+- Console I/O
+
+Features Implemented:
+1. User login system
+2. Add and view expenses
+3. Data validation
+4. Error handling (e.g. SQL exceptions, input type checks)
+5. MySQL integration
+
+Files:
+- loginframe.java
+- expenseframe.java
+- Expense.java
+- dbconnection.java
+- expenceDAO.java
+- userDAO.java
+
+Prepared for Review 2 at Galgotias University (GUVI)
