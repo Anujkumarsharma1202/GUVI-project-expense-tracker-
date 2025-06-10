@@ -1,0 +1,26 @@
+
+---
+
+### 📌 2. `database.sql` (Ensure this exists in root)
+
+If not already created, add this:
+
+```sql
+CREATE DATABASE IF NOT EXISTS expense_tracker;
+
+USE expense_tracker;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE,
+    password VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS expenses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    category VARCHAR(50),
+    amount DOUBLE,
+    date DATE,
+    FOREIGN KEY (user_id) REFERENCES users(id)
+);
